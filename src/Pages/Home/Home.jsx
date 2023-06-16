@@ -26,11 +26,14 @@ const Home = () => {
           <img src={foto2} alt="foto2" className="d-block mx-lg-auto img-fluid"/>
         </div>
       </section>
-      <section className="container col-xxl-8 px-4 py-5">
+      <section id='ComoFunciona' className="container col-xxl-8 px-4 py-5 mt-9">
         <ComoFunciona/>
       </section>
-      <section className="container col-xxl-8 px-4 py-5">
+      <section id='Testimonios' className="container col-xxl-8 px-4 py-5 mt-9">
         <Testimonios/>
+      </section>
+      <section id='Contacto' className="container col-xxl-8 px-4 py-5 mt-9">
+        <h1 className='mt-9'>Contacto</h1>
       </section>
       
      <FooterHome/> 

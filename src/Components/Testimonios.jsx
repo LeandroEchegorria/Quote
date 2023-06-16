@@ -19,7 +19,7 @@ const Testimonios = () => {
   const currentPhrase = phrases[currentIndex];
   
   return (
-    <div className="container text-black text-center ">
+    <div className="container text-black text-center mt-9">
       <p><img src={testimonio} alt="title" /></p>
       <div className="row">
         <div className="col">
