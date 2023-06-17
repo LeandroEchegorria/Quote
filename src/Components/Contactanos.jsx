@@ -1,44 +1,51 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 const Contactanos = () => {
-    const handleSubmit = (values) => {
-        console.log(values);
-      };
 
   return (
-    <Formik
-      initialValues={{ name: '', email: '' }}
-      validate={(values) => {
-        const errors = {};
+    <div className="row">
+      <div className="">
+        <h4 className="mb-3 text-primary-btn">Contactenos</h4>
+        <form className="needs-validation" novalidate>
+          <div className="row g-3">
+            <div className="col-sm-6">
+              <label for="firstName" className="form-label">Nombre</label>
+              <input type="text" className="form-control" id="firstName" placeholder="" value="" required/>
+                <div className="invalid-feedback">
+                  Valid first name is required.
+                </div>
+            </div>
 
-        if (!values.name) {
-          errors.name = 'Campo requerido';
-        }
+            <div className="col-sm-6">
+              <label for="lastName" className="form-label">Apellido</label>
+              <input type="text" className="form-control" id="lastName" placeholder="" value="" required/>
+                <div className="invalid-feedback">
+                  Valid last name is required.
+                </div>
+            </div>
 
-        if (!values.email) {
-          errors.email = 'Campo requerido';
-        }
+            <div className="col-12">
+              <label for="email" className="form-label">Email <span className="text-body-secondary">(Optional)</span></label>
+              <input type="email" className="form-control" id="email" placeholder="you@example.com"/>
+                <div className="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+            </div>
 
-        return errors;
-      }}
-      onSubmit={handleSubmit}
-    >
-      <Form>
-        <div className="form-group">
-          <label htmlFor="name">Nombre:</label>
-          <Field type="text" className="form-control" id="name" name="name" />
-          <ErrorMessage name="name" component="div" className="text-danger" />
-        </div>
+            <div className="col-12">
+              <label for="zip" className="form-label">Comentario</label>
+              <textarea type="text" className="form-control" id="zip" placeholder="Escriba su consulta" required/>
 
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <Field type="email" className="form-control" id="email" name="email" />
-          <ErrorMessage name="email" component="div" className="text-danger" />
-        </div>
+            </div>
+          </div>
 
-        <button type="submit" className="btn btn-primary">Enviar</button>
-      </Form>
-    </Formik>
+          <hr className="my-4"/>
+          <button className="btn btn-primary btn-sm px-4 py-2" type="submit">Enviar</button>
+
+        </form>
+      </div>
+    </div>
+          
   )
 }
 

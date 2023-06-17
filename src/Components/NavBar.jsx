@@ -18,6 +18,7 @@ const NavBar = () => {
               <li><a href='#ComoFunciona' className='nav-link link-body-emphasis ms-9'>Como Funciona</a></li>
               <li><a href='/#Testimonios'  className='nav-link link-body-emphasis'>Testimonios</a></li>
               <li><a href='/#Contacto'  className='nav-link link-body-emphasis'>Contactenos</a></li>
+              <li><a href='/#Contacto'  className='nav-link link-body-emphasis'>Team</a></li>
 
       
             </ul>

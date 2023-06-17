@@ -4,6 +4,7 @@ import foto2 from '../../assets/Group 8.png'
 import ComoFunciona from '../../Components/ComoFunciona'
 import FooterHome from '../../Components/FooterHome'
 import Testimonios from '../../Components/Testimonios'
+import Contactanos from '../../Components/Contactanos'
 
 const Home = () => {
   return (
@@ -33,7 +34,7 @@ const Home = () => {
         <Testimonios/>
       </section>
       <section id='Contacto' className="container col-xxl-8 px-4 py-5 mt-9">
-        <h1 className='mt-9'>Contacto</h1>
+        <Contactanos/>
       </section>
       
      <FooterHome/> 
