@@ -1,14 +1,14 @@
 import React from 'react'
-import NavbarDashboard from './Navbardashboard'
-import Workspace from './Workspace'
-import FooterDashboard from './FooterDashboard'
+import NavbarDashboard from './componentesDashboard/NavbarDashboard'
+import Workspace from './routesDashboard/Workspace'
+import FooterDashboard from './componentesDashboard/FooterDashboard'
 
 export default function HomeUsuario() {
   return (
     <>
-      <NavbarDashboard/>
-      <Workspace/>
-      <FooterDashboard/>
+      <NavbarDashboard></NavbarDashboard>
+      <Workspace></Workspace>
+      <FooterDashboard></FooterDashboard>
     </>
   )
 }
