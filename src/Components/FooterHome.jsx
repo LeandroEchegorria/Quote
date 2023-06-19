@@ -14,7 +14,7 @@ export default function FooterHome() {
             </a>
           </div>
           <a href='/' className="col-6 col-sm-2 mb-3 nav-link">
-            <h5>Como Funciona</h5>
+            <h5>Cómo Funciona</h5>
           </a>
           <a href='/' className="col-6 col-sm-2 mb-5 nav-link">
           <h5>Testimonios</h5>
