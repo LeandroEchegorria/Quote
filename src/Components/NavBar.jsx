@@ -15,7 +15,7 @@ const NavBar = () => {
             </a>
 
             <ul className='nav col-12 flex col-lg-auto me-lg-auto mb-2 mb-md-0'>
-              <li><a href='#ComoFunciona' className='nav-link link-body-emphasis ms-9'>Como Funciona</a></li>
+              <li><a href='#ComoFunciona' className='nav-link link-body-emphasis ms-9'>Cómo Funciona</a></li>
               <li><a href='/#Testimonios'  className='nav-link link-body-emphasis'>Testimonios</a></li>
               <li><a href='/#Contacto'  className='nav-link link-body-emphasis'>Contactenos</a></li>
               <li><a href='/#Contacto'  className='nav-link link-body-emphasis'>Team</a></li>
