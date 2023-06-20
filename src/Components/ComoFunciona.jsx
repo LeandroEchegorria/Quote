@@ -4,7 +4,7 @@ import func3 from '../assets/comofunciona3.png';
 
 const ComoFunciona = () => {
   return (
-    <div className="row bg-primary p-5 text-white">
+    <div className="row bg-primary p-5 text-white mt-9">
       <h1>Cómo Funciona</h1>
       <p>¡Descubrí cómo podés utilizar nuestro sitio web para crear, compartir y descargar frases motivacionales, en sólo unos simples pasos!</p>
       <div className="col-lg-4 text-center">
