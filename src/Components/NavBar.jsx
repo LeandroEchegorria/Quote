@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
 import logoQuotify from '../assets/quotify-logo.svg'
-import Historial from '../Pages/Dashboard/Historial'
-import Home from "../Pages/Home/Home"
+
+import Historial from '../Pages/Dashboard/pagesDashboard/Historial'
+
 
 
 
