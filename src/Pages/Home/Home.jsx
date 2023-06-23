@@ -5,6 +5,9 @@ import ComoFunciona from '../../Components/ComoFunciona'
 import FooterHome from '../../Components/FooterHome'
 import Testimonios from '../../Components/Testimonios'
 import Contactanos from '../../Components/Contactanos'
+import TeamCard from '../../Components/TeamCard'
+import TeamData from '../../utils/TeamData'
+import Team from '../../Components/Team'
 
 const Home = () => {
   return (
@@ -35,6 +38,13 @@ const Home = () => {
       </section>
       <section id='Contacto' className="container col-xxl-8 px-4 py-5 mt-9">
         <Contactanos/>
+      </section>
+      <section id='Team' className="container col-xxl-8 px-4 py-5 mt-9">
+        <h3>Conocé a nuestro dream team</h3>
+        <p>Te presentamos al increíble equipo detrás de Quotify. 
+          Somos un grupo de mentes creativas y apasionadas que 
+          trabaja duro para brindarte la mejor experiencia posible.</p>
+        <Team/>
       </section>
       
      <FooterHome/> 
