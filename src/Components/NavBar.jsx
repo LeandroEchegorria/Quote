@@ -20,11 +20,12 @@ const NavBar = () => {
               <li><a href='/#Testimonios'  className='nav-link link-body-emphasis'>Testimonios</a></li>
               <li><a href='/#Contacto'  className='nav-link link-body-emphasis'>Contactanos</a></li>
               <li><a href='/#Contacto'  className='nav-link link-body-emphasis'>Team</a></li>
-
-      
             </ul>
-            <Link to='/login'><button type='button' className='btn btn-secondary-btn btn-sm px-3 py-2 flex justify-end mx-2'>
-              <strong>Iniciar Sesión</strong></button>
+
+            <Link to='/login'>
+              <button type='button' className='btn btn-secondary-btn btn-sm px-3 py-2 flex justify-end mx-2'>
+                <strong>Iniciar Sesión</strong>
+              </button>
             </Link>
             <Link to='/register'><button type='button' className='btn btn-primary btn-sm px-4 py-2 flex justify-end'><strong>Registrarse</strong></button>
             </Link>

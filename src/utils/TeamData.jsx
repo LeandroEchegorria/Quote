@@ -16,6 +16,13 @@ export default [
       
       {
       id: 3,
+      name: 'Claudia Zapata',
+      title: 'Front End Developer',
+      image: imageURL,
+      },
+    
+      {
+      id: 4,
       name: 'Leandro Echegorría',
       title: 'Front End Developer',
       image: imageURL,
