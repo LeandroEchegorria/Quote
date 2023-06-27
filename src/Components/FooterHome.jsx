@@ -3,6 +3,9 @@ import TwitterIcon from '@mui/icons-material/Twitter'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 
+//import Desktop from '../Components/Desktop'
+
+
 export default function FooterHome() {
   return (
     <div className="container bg-primary rounded-top-5 text-white text-center">
@@ -13,6 +16,9 @@ export default function FooterHome() {
               <img className='p-0 m-4' src={logoQuotify} height="30" alt='Quotify, un lugar donde la inspiración nace'/>
             </a>
           </div>
+          <a href='/' className="col-6 col-sm-2 mb-3 nav-link">
+            <h5  >Integrantes</h5>{/*Integrantes está en el archivo Desktop.jsx */}
+          </a>
           <a href='/' className="col-6 col-sm-2 mb-3 nav-link">
             <h5  >Como Funciona</h5>
           </a>
