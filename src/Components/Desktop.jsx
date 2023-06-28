@@ -11,6 +11,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { purple} from '@mui/material/colors';
 
 
 
@@ -20,8 +21,8 @@ const Desktop = () =>{
      
         <div className="container">
             <div className='titulo'>
-                <h1 style={{marginBottom:"1.5rem"}}>¡Conocé al dream team!</h1>
-                <h3>Te presentamos al increíble equipo detrás de Quote. Somos un grupo de mentes creativas y apasionadas que trabaja duro para brindarte la mejor experiencia posible</h3>       
+                <h1 className='hh1' style={{marginBottom:"1.5rem"}}>¡Conocé al dream team!</h1>
+                <h3 className='hh3'>Te presentamos al increíble equipo detrás de Quote. Somos un grupo de mentes creativas y apasionadas que trabaja duro para brindarte la mejor experiencia posible</h3>       
             </div>
             
                 <div className="cajas">
@@ -33,12 +34,12 @@ const Desktop = () =>{
                                 <div>
                                     <h4 className="nombre" >Ailén Glassmam</h4>
                                     <h6>FrontEnd Developer</h6>
-                                    <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting text <br/> below as a natural lead-in to additional content. <br/>This content is a little bit longer.</p>
+                                    <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting <br/>text below as a natural lead-in to additional content. <br/>This content is a little bit longer.</p>
                                             <ul className="lista-ul">
-                                                <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-white'><FacebookIcon /></a></li>
-                                                <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-white'><TwitterIcon /></a></li>
-                                                <li className='nav-item'><a href='https://instagram.com/' target='blank' className='nav-link px-2 text-white'><InstagramIcon /></a></li>
-                                                <li className='nav-item'><a href='https://ar.linkedin.com/' target='blank' className='nav-link px-2 text-white'><LinkedInIcon /></a></li>
+                                                <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><FacebookIcon /></a></li>
+                                                <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><TwitterIcon /></a></li>
+                                                <li className='nav-item'><a href='https://instagram.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><InstagramIcon /></a></li>
+                                                <li className='nav-item'><a href='https://ar.linkedin.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><LinkedInIcon /></a></li>
                                             </ul>
                                         
                                 </div>
@@ -52,12 +53,12 @@ const Desktop = () =>{
                                 <div>
                                     <h4 className="nombre">Dexilen Mendoza</h4>
                                     <h6>FrontEnd Developer</h6>
-                                    <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting text <br/> below as a natural lead-in to additional content.<br/> This content is a little bit longer.</p>
+                                    <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting <br/>text below as a natural lead-in to additional content.<br/> This content is a little bit longer.</p>
                                             <ul className="lista-ul">
-                                                <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-white'><FacebookIcon /></a></li>
-                                                <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-white'><TwitterIcon /></a></li>
-                                                <li className='nav-item'><a href='https://instagram.com/' target='blank' className='nav-link px-2 text-white'><InstagramIcon /></a></li>
-                                                <li className='nav-item'><a href='https://ar.linkedin.com/' target='blank' className='nav-link px-2 text-white'><LinkedInIcon /></a></li>
+                                                <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><FacebookIcon /></a></li>
+                                                <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><TwitterIcon /></a></li>
+                                                <li className='nav-item'><a href='https://instagram.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><InstagramIcon /></a></li>
+                                                <li className='nav-item'><a href='https://ar.linkedin.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><LinkedInIcon /></a></li>
                                             </ul>
                                         
                                 </div>
@@ -72,12 +73,12 @@ const Desktop = () =>{
                                     <div>
                                         <h4 className="nombre">Claudia Zapata</h4>
                                         <h6>FrontEnd Developer</h6>
-                                        <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting text <br/> below as a natural lead-in to additional content.<br/> This content is a little bit longer.</p>
+                                        <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting <br/>text below as a natural lead-in to additional content.<br/> This content is a little bit longer.</p>
                                                 <ul className="lista-ul">
-                                                    <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-white'><FacebookIcon /></a></li>
-                                                    <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-white'><TwitterIcon /></a></li>
-                                                    <li className='nav-item'><a href='https://instagram.com/' target='blank' className='nav-link px-2 text-white'><InstagramIcon /></a></li>
-                                                    <li className='nav-item'><a href='https://ar.linkedin.com/' target='blank' className='nav-link px-2 text-white'><LinkedInIcon /></a></li>
+                                                    <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><FacebookIcon /></a></li>
+                                                    <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><TwitterIcon /></a></li>
+                                                    <li className='nav-item'><a href='https://instagram.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><InstagramIcon /></a></li>
+                                                    <li className='nav-item'><a href='https://ar.linkedin.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><LinkedInIcon /></a></li>
                                                 </ul>
                                             
                                     </div>
@@ -92,12 +93,12 @@ const Desktop = () =>{
                                     <div>
                                         <h4 className="nombre">Leandro Echegorria</h4>
                                         <h6>FrontEnd Developer</h6>
-                                        <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting text <br/>below as a natural lead-in to additional content. <br/>This content is a little bit longer.</p>
+                                        <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting <br/>text below as a natural lead-in to additional content. <br/>This content is a little bit longer.</p>
                                                 <ul className="lista-ul">
-                                                    <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-white'><FacebookIcon /></a></li>
-                                                    <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-white'><TwitterIcon /></a></li>
-                                                    <li className='nav-item'><a href='https://instagram.com/' target='blank' className='nav-link px-2 text-white'><InstagramIcon /></a></li>
-                                                    <li className='nav-item'><a href='https://ar.linkedin.com/' target='blank' className='nav-link px-2 text-white'><LinkedInIcon /></a></li>
+                                                    <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><FacebookIcon /></a></li>
+                                                    <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><TwitterIcon /></a></li>
+                                                    <li className='nav-item'><a href='https://instagram.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><InstagramIcon /></a></li>
+                                                    <li className='nav-item'><a href='https://ar.linkedin.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><LinkedInIcon /></a></li>
                                                 </ul>
                                             
                                     </div>

@@ -1,11 +1,19 @@
 .container{
-    margin-top: 4rem;
+    margin-top: 5rem;
    justify-content: center;
    
     
 }
 .titulo{
     margin-bottom: 2rem;
+    text-align: center;
+    
+}
+.hh1{
+    font-size: 2rem;
+}
+.hh3{
+    font-size: 1rem;
 }
 .cajas{
     width: 100%;
@@ -24,6 +32,8 @@
     margin-bottom: 0.5rem;
     margin-right: 2.5rem;
     width: calc(50% - 2.5rem);
+    height: 30vh;
+    
 
 }
 
@@ -31,12 +41,14 @@
     width: 10vw;
     height: 15vh;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 2px solid purple;
+    ;
     margin-right: 1rem;
     margin-left:4rem;
     
 }
 .nombre{
+    font-size: 1.3rem;
     padding: 0.1rem;
 }
 
@@ -44,5 +56,5 @@
     display: flex;
     list-style-type: none;
     justify-content: left;
-  
+    
 }
