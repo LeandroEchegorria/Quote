@@ -6,7 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 
 export default function FooterDashboard() {
   return (
-    <footer className='container rounded-top-5 d-flex flex-wrap justify-content-between align-items-center bg-primary fixed-bottom mb-0 py-5 px-5'>
+    <footer className='container rounded-top-5 d-flex flex-wrap justify-content-between align-items-center bg-primary fixed-bottom mb-0 py-1 px-5'>
       {/* texto derechos reservados */}
       <p className='col-md-4 mb-0 text-white fs-6'>© 2023 Grupo 8.</p>
       {/* logo quotify */}

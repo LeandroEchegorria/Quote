@@ -1,10 +1,10 @@
 import React from 'react'
 import QuoteData from '../dataDashboard/QuoteData'
 import BotonSacarFav from '../componentesDashboard/botonSacarFav';
-import BotonCompartirFrase from '../componentesDashboard/BotonCompartirFrase';
+import BotonCopiarFrase from '../componentesDashboard/BotonCopiarFrase';
 
 export default function Historial() {
-
+// este fragmento de código se hace con un archivo data (dataDashboard/QuoteData) con algunas frases pre establecidas. Lo que se hace es recorrer el array y renderizarlo. Evaluar cómo se reemplaza esto con la base de datos
   const historial = QuoteData.map(frase => {
     return (
       <div className='col' id={frase.id}>
@@ -13,7 +13,7 @@ export default function Historial() {
             <h6 className='m-0'><strong>Quote #{frase.id}</strong></h6>
             <div>
               <BotonSacarFav></BotonSacarFav>
-              <BotonCompartirFrase></BotonCompartirFrase>
+              <BotonCopiarFrase></BotonCopiarFrase>
             </div>
 
           </div>

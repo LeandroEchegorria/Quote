@@ -3,7 +3,8 @@ import Swal from 'sweetalert2';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 
 export default function BotonAgregarFav() {
-
+//botón con el que debo agregar la frase generada a la base de datos del usuario. Revisar la lógica generada en el 'botonCopiarFrase' y 'Quote' donde se realiza una copia de la frase generada/obtenida final
+// ver los objetos pasados como parametros a los componentes
   const agregarFav = () => {
     Swal.fire({
       color: 'white',

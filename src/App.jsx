@@ -5,6 +5,7 @@ import HomeUsuario from './Pages/Dashboard/HomeUsuario';
 import LoginPage from './Pages/loginpage/loginPage';
 import SignUpPage from './Pages/signuppage/signUpPage';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import PageNotFound from './Pages/PageNotFound';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
         <Route path='/login' element={<LoginPage />}/>
         <Route path='/register' element={<SignUpPage />}/>
         <Route path='/home-user/*' element={<HomeUsuario/>}/>
-        <Route path='*' element={<h2>Page not found</h2>}/>
+        <Route path='*' element={<PageNotFound/>}/>
       </Routes>
     </BrowserRouter>
   )

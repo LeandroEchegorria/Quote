@@ -10,7 +10,7 @@ export default function botonSacarFav() {
       color: 'white',
       iconColor: 'white',
       background: '#7D18F7',
-      text: "No hay problema, a veces también es necesario dejar ir para dar lugar a nuevas ideas.",
+      text: 'No hay problema, a veces también es necesario dejar ir para dar lugar a nuevas ideas.',
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: 'black',
@@ -25,7 +25,7 @@ export default function botonSacarFav() {
           color: 'white',
           iconColor: 'white',
           background: '#7D18F7',
-          text: "¡Gracias por formar parte de Quotify!",
+          text: '¡Gracias por formar parte de Quotify!',
           icon: 'success',
           confirmButtonColor: 'black',
           confirmButtonText: 'Volver'
