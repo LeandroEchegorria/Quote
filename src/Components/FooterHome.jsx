@@ -16,13 +16,13 @@ export default function FooterHome() {
               <img className='p-0 m-4' src={logoQuotify} height="30" alt='Quotify, un lugar donde la inspiración nace'/>
             </a>
           </div>
-          <a href='/' className="col-6 col-sm-2 mb-3 nav-link">
+          <a href='/Integrantes' className="col-6 col-sm-2 mb-3 nav-link">
             <h5  >Integrantes</h5>{/*Integrantes está en el archivo Desktop.jsx */}
           </a>
           <a href='/' className="col-6 col-sm-2 mb-3 nav-link">
             <h5  >Como Funciona</h5>
           </a>
-          <a href='/' className="col-6 col-sm-2 mb-5 nav-link">
+          <a href='/Testimonios' className="col-6 col-sm-2 mb-5 nav-link">
           <h5>Testimonios</h5>
           </a>
           <a href='/' className="col-6 col-sm-2 mb-3 nav-link">

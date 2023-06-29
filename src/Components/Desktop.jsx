@@ -9,20 +9,27 @@ import CCLeandro from '../assets/CCLeandro.png';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 import { purple } from '@mui/material/colors';
+import NavBar from './NavBar';
+import FooterHome from './FooterHome';
 
 
 
 
 const Desktop = () =>{
     
+    
     return (
-     
+        <>
+        <section>
+        <NavBar/> 
+        </section>
+    
         <div className="container">
             <div className='titulo'>
-                <h1 className='hh1' style={{marginBottom:"1.5rem"}}>¡Conocé al dream team!</h1>
+                <h1 className='hh1' style={{marginBottom:"1rem"}}>¡Conocé al dream team!</h1>
                 <h3 className='hh3'>Te presentamos al increíble equipo detrás de Quote. Somos un grupo de mentes creativas y apasionadas que trabaja duro para brindarte la mejor experiencia posible</h3>       
             </div>
             
@@ -107,6 +114,10 @@ const Desktop = () =>{
 
                 </div>
         </div>
+        <section>
+        <FooterHome/> 
+        </section>
+    </>
   );
 }
 
