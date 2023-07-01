@@ -1,10 +1,10 @@
 
-import '../Components/Desktop/Desktop.css';
+import '../Desktop/Desktop.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import AAilen from '../assets/AAilen.png';
-import BDexilen from '../assets/BDexilen.png';
-import CClaudia from '../assets/CClaudia.png';
-import CCLeandro from '../assets/CCLeandro.png';
+import AAilen from '../../assets/AAilen.png';
+import BDexilen from '../../assets/BDexilen.png';
+import CClaudia from '../../assets/CClaudia.png';
+import CCLeandro from '../../assets/CCLeandro.png';
 
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -12,8 +12,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import { purple } from '@mui/material/colors';
-import NavBar from './NavBar';
-import FooterHome from './FooterHome';
+import NavBar from '../NavBar';
+import FooterHome from '../FooterHome';
 
 
 
@@ -24,12 +24,12 @@ const Desktop = () =>{
     return (
         <>
         <section>
-        <NavBar/> 
+            <NavBar/> 
         </section>
     
         <div className="container">
             <div className='titulo'>
-                <h1 className='hh1' style={{marginBottom:"1rem"}}>¡Conocé al dream team!</h1>
+                <h1 className='hh1'>¡Conocé al dream team!</h1>
                 <h3 className='hh3'>Te presentamos al increíble equipo detrás de Quote. Somos un grupo de mentes creativas y apasionadas que trabaja duro para brindarte la mejor experiencia posible</h3>       
             </div>
             
@@ -41,8 +41,8 @@ const Desktop = () =>{
                                 </div>
                                 <div>
                                     <h4 className="nombre" >Ailén Glassmam</h4>
-                                    <h6>FrontEnd Developer</h6>
-                                    <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting <br/>text below as a natural lead-in to additional content. <br/>This content is a little bit longer.</p>
+                                    <h6 className='hh6'>FrontEnd Developer</h6>
+                                    <p className="text1">This is a wider card with supporting <br/>text below as a natural lead-in to additional content. <br/>This content is a little bit longer.</p>
                                             <ul className="lista-ul">
                                                 <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[600] }}><FacebookIcon /></a></li>
                                                 <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[600] }}><TwitterIcon /></a></li>
@@ -60,8 +60,8 @@ const Desktop = () =>{
                                 </div>
                                 <div>
                                     <h4 className="nombre">Dexilen Mendoza</h4>
-                                    <h6>FrontEnd Developer</h6>
-                                    <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting <br/>text below as a natural lead-in to additional content.<br/> This content is a little bit longer.</p>
+                                    <h6 className='hh6'>FrontEnd Developer</h6>
+                                    <p className="text1">This is a wider card with supporting <br/>text below as a natural lead-in to additional content.<br/> This content is a little bit longer.</p>
                                             <ul className="lista-ul">
                                                 <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[600] }}><FacebookIcon /></a></li>
                                                 <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[600] }}><TwitterIcon /></a></li>
@@ -80,8 +80,8 @@ const Desktop = () =>{
                                     </div>
                                     <div>
                                         <h4 className="nombre">Claudia Zapata</h4>
-                                        <h6>FrontEnd Developer</h6>
-                                        <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting <br/>text below as a natural lead-in to additional content.<br/> This content is a little bit longer.</p>
+                                        <h6 className='hh6'>FrontEnd Developer</h6>
+                                        <p className="text1">This is a wider card with supporting <br/>text below as a natural lead-in to additional content.<br/> This content is a little bit longer.</p>
                                                 <ul className="lista-ul">
                                                     <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[500] }}><FacebookIcon /></a></li>
                                                     <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[600] }}><TwitterIcon /></a></li>
@@ -100,8 +100,8 @@ const Desktop = () =>{
                                     </div>
                                     <div>
                                         <h4 className="nombre">Leandro Echegorria</h4>
-                                        <h6>FrontEnd Developer</h6>
-                                        <p className="text1" style={{fontSize:"0.8rem"}}>This is a wider card with supporting <br/>text below as a natural lead-in to additional content. <br/>This content is a little bit longer.</p>
+                                        <h6 className='hh6'>FrontEnd Developer</h6>
+                                        <p className="text1">This is a wider card with supporting <br/>text below as a natural lead-in to additional content. <br/>This content is a little bit longer.</p>
                                                 <ul className="lista-ul">
                                                     <li className='nav-item'><a href='https://facebook.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[600] }}><FacebookIcon /></a></li>
                                                     <li className='nav-item'><a href='https://twitter.com/' target='blank' className='nav-link px-2 text-violet' style={{ color: purple[600] }}><TwitterIcon /></a></li>
@@ -115,7 +115,7 @@ const Desktop = () =>{
                 </div>
         </div>
         <section>
-        <FooterHome/> 
+            <FooterHome/> 
         </section>
     </>
   );
