@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-import Quote from './Quote'
-
+import Quote from './componentesDashboard/Quote';
 
 export default function Dashboard() {
 
