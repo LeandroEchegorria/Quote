@@ -1,7 +1,28 @@
-
+import { useEffect } from 'react';
 import Quote from './Quote'
 
+
 export default function Dashboard() {
+
+  //useEffect(() => {
+    //fetch("http://localhost:5000/userData", {
+      //method: "POST",
+      //crossDomain: true,
+      //headers: {
+        //"Content-Type":"application/json",
+        //Accept: "application/json",
+        //"Access-Control-Allow-Origin": "*",
+      //},
+      //body: JSON.stringify({
+        //token,
+      //}),
+    //})
+    //.then((res) => res.json())
+    //.then((data) => {
+      //console.log(data, "userData");
+    //});
+  //}, []);
+
   return (
     <section className='min-vh-100 text-center bg-background d-flex flex-column justify-content-center align-items-center py-9'>
     <h1 className='display-5 fw-bold text-body-emphasis mb-3'>¡Bienvenido, Quoty!</h1>

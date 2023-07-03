@@ -5,7 +5,7 @@ const Contactanos = () => {
   return (
     <div className="row">
       <div className="">
-        <h4 className="mb-3 text-primary-btn">Contactenos</h4>
+        <h4 className="mb-3 text-primary-btn">Contactanos</h4>
         <form className="needs-validation" novalidate>
           <div className="row g-3">
             <div className="col-sm-6">
