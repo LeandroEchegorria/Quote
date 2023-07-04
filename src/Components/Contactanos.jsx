@@ -31,7 +31,8 @@ const Contactanos = () => {
     <div className="row">
       <div className="">
         <h4 className="mb-3 text-primary-btn">Contactanos</h4>
-        <form className="needs-validation" onSubmit={handleSubmit} >
+        <form className="needs-validation" novalidate>
+
           <div className="row g-3">
             <div className="col-sm-9">
               <label className="form-label">Nombre completo</label>
