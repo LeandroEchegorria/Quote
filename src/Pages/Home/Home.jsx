@@ -6,6 +6,7 @@ import FooterHome from '../../Components/FooterHome'
 import Testimonios from '../../Components/Testimonios'
 import Contactanos from '../../Components/Contactanos'
 
+
 const Home = () => {
   return (
     <>
@@ -36,7 +37,7 @@ const Home = () => {
       <section id='Contacto' className="container col-xxl-8 px-4 py-5 mt-9">
         <Contactanos/>
       </section>
-      
+     
      <FooterHome/> 
     </>
   )
