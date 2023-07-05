@@ -1,24 +1,27 @@
 import React from 'react'
 import Swal from 'sweetalert2';
 
+//paso como parametros la función de setear la frase propia, y los valores de los estados de 
 export default function BotonCrearFrasePropia({ setFrasePropia, mostrarFrase, frasePropia }) {
+
   // popup para ingresar la frase deseada
   const generarFrasePropia = async () => {
     const { value: { text, author } } = await Swal.fire({
-      title: 'Tu frase',
-      color: 'white',
-      confirmButtonColor: 'black',
-      focusConfirm: false,
       background: '#7D18F7',
+      title: 'Tu frase',
       text:
         'Acá no hay frases hechas ni impuestas, creá la que te cope más! ¡Dale, animate a crear tu propia inspiración y compartila con la banda!',
-      inputPlaceholder: 'Ingresa tu frase acá...',
+      color: 'white',
+      confirmButtonColor: 'black',
+      confirmButtonText: 'Crear frase',
+      focusConfirm: false,
       showCancelButton: true,
+      cancelButtonText: 'Volver',
       cancelButtonColor: 'transparent',
       focusCancel: false,
       html: `
-      <input id="swal-input1" class="swal2-input" placeholder="Ingresa el texto de la frase..." value="${frasePropia?.text || ''}">
-      <input id="swal-input2" class="swal2-input" placeholder="Ingresa el autor de la frase..." value="${frasePropia?.author || ''}">
+      <input id='swal-input1' class='swal2-input' placeholder='Tu frase' value='${frasePropia?.text || ''}'>
+      <input id='swal-input2' class='swal2-input' placeholder='¿Sos el autor?' value='${frasePropia?.author || ''}'>
     `,
       preConfirm: () => {
         return {
@@ -32,23 +35,10 @@ export default function BotonCrearFrasePropia({ setFrasePropia, mostrarFrase, fr
       const frasePropiaData = { text, author };
       setFrasePropia(frasePropiaData);
       mostrarFrase();
-
-      // Guardar la frase propia en el almacenamiento local
-      // localStorage.setItem('frasePropia', JSON.stringify(frasePropiaData));
     }
   };
 
-
-  /*
-  // estados para: renderizar el componente al clickear el botón "frase del dia"
-  const [mostrarComponente, setMostrarComponente] = useState(false);
-
-  //función para renderizar el componente cuando se hace click en el botón
-  const obtenerFraseDelDia = () => {
-    setMostrarComponente(true);
-  }; */
-
   return (
-    <button type='button' className='btn btn-primary btn-lg px-3 py-2 gap-5' onClick={generarFrasePropia}><strong>Generar Frase</strong></button>
+    <button type='button' className='btn btn-primary btn-lg px-3 py-2 gap-5 fw-bold' onClick={generarFrasePropia}>Generar Frase</button>
   )
 }

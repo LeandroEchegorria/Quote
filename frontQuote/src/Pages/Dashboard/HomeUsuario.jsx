@@ -12,14 +12,3 @@ export default function HomeUsuario() {
     </>
   )
 }
-
-//creo proyecto con "rfc"
-//estructuro el sitio del usuario de la siguiente manera:
-
-// Home Usuario
-//   NavbarDashboard
-//   Workspace
-//     Dashboard
-//        Quote
-//     Historial
-//   FooterDashboard

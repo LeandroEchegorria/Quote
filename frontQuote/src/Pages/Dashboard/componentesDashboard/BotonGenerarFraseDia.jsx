@@ -4,7 +4,7 @@ export default function BotonGenerarFraseDia({ setFraseApi, mostrarFraseDelDia }
   
   const generarFraseDia = async () => {
     //traigo la api
-    fetch("https://type.fit/api/quotes")
+    fetch('https://type.fit/api/quotes')
       .then(function (response) {
         //formateo la respuesta en formato json (array)
         return response.json();

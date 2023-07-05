@@ -6,7 +6,7 @@ import Historial from '../pagesDashboard/Historial'
 
 export default function NavbarDashboard() {
   return (
-    <header className='py-4 bg-background fixed-top shadow'>
+    <header className='py-3 bg-background fixed-top shadow'>
       <div className='container'>
         <div className='d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start'>
           <a href='/' className='d-flex align-items-center mb-lg-0 link-body-emphasis text-decoration-none'>
@@ -27,7 +27,7 @@ export default function NavbarDashboard() {
               <li><p className='text-white'>@Quotyfier</p></li>
               <li><hr className='dropdown-divider bg-white' /></li>
               <li><a className='nav-link link-hover-white text-white my-3' href='#'>Editar perfil</a></li>
-              <li><button type="button" class="btn btn-special-btn px-auto py-2">Cerrar Sesión</button></li>
+              <li><button type='button' class='btn btn-special-btn px-auto py-2'>Cerrar Sesión</button></li>
             </ul>
           </div>
         </div>

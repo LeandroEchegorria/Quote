@@ -35,7 +35,7 @@ export default class signUp extends Component {
       if (data.status == "ok"){
         alert("Registro exitoso");
         window.localStorage.setItem("token", data.data);
-        window.location.href = "/dashboard"
+        window.location.href = "/home-user/*"
       }
     });
   }

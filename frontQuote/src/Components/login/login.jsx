@@ -31,7 +31,7 @@ handleSubmit(e) {
       if (data.status == "ok"){
         alert("Login exitoso");
         window.localStorage.setItem("token", data.data);
-        window.location.href = "/dashboard"
+        window.location.href = "/home-user/*"
       }
   });
 }
