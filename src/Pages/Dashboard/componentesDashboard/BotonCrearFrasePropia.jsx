@@ -3,6 +3,7 @@ import Swal from 'sweetalert2';
 
 //paso como parametros la función de setear la frase propia, y los valores de los estados de 
 export default function BotonCrearFrasePropia({ setFrasePropia, mostrarFrase, frasePropia }) {
+
   // popup para ingresar la frase deseada
   const generarFrasePropia = async () => {
     const { value: { text, author } } = await Swal.fire({
@@ -34,21 +35,8 @@ export default function BotonCrearFrasePropia({ setFrasePropia, mostrarFrase, fr
       const frasePropiaData = { text, author };
       setFrasePropia(frasePropiaData);
       mostrarFrase();
-
-      // Guardar la frase propia en el almacenamiento local
-      // localStorage.setItem('frasePropia', JSON.stringify(frasePropiaData));
     }
   };
-
-
-  /*
-  // estados para: renderizar el componente al clickear el botón 'frase del dia'
-  const [mostrarComponente, setMostrarComponente] = useState(false);
-
-  //función para renderizar el componente cuando se hace click en el botón
-  const obtenerFraseDelDia = () => {
-    setMostrarComponente(true);
-  }; */
 
   return (
     <button type='button' className='btn btn-primary btn-lg px-3 py-2 gap-5 fw-bold' onClick={generarFrasePropia}>Generar Frase</button>

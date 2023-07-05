@@ -2,7 +2,7 @@ import { React, useRef, useState } from 'react';
 import FormatQuoteRoundedIcon from '@mui/icons-material/FormatQuoteRounded';
 import BotonAgregarFav from './botonAgregarFav';
 import BotonEditarFrase from './BotonEditarFrase';
-import BotonCopiarFrase from './BotonCopiarFrase';
+import BotonCopiarFraseDashboard from './BotonCopiarFraseDashboard';
 import EditorFrase from '../componentesDashboard/EditorFrase';
 
 // le paso al componente un objeto que contiene los valores finales de las funciones frasePropia y fraseApi
@@ -31,9 +31,9 @@ export default function Quote({ frasePropia, fraseApi }) {
         <figcaption>Autor <cite title='Source Title' ref={authorRef}>{mostrarFrase?.author}</cite></figcaption>
       </figure>
       <div>
-        <BotonAgregarFav></BotonAgregarFav>
-        <BotonEditarFrase mostrarEditorDeFrase={mostrarEditorDeFrase}></BotonEditarFrase>
-        <BotonCopiarFrase quoteRef={quoteRef} authorRef={authorRef} />
+        <BotonAgregarFav quoteRef={quoteRef} authorRef={authorRef}/>
+        <BotonEditarFrase mostrarEditorDeFrase={mostrarEditorDeFrase}/>
+        <BotonCopiarFraseDashboard quoteRef={quoteRef} authorRef={authorRef} />
       </div>
       <div className='d-grid gap-2 d-sm-flex justify-content-sm-center my-9'>
         {editorDeFrase && <EditorFrase mostrarFrase={mostrarFrase} />}
