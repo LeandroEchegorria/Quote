@@ -18,14 +18,15 @@
     "@mui/styled-engine": "^5.13.2",
     "@mui/styled-engine-sc": "^5.12.0",
     "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.3.0",
     "formik": "^2.4.2",
+    "html2canvas": "^1.4.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.12.0",
     "styled-components": "^5.3.11",
-    "animate.css": "^4.1.1",
     "sweetalert2": "^11.7.12"
   },
   "devDependencies": {
