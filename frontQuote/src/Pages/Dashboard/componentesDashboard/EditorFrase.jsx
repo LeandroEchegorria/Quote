@@ -1,8 +1,8 @@
-import React, { createElement } from 'react';
-import { useState } from 'react';
-import '../styles/styles.css';
+import React from 'react'
+import { useState } from 'react'
+import '../styles/styles.css'
 import '../../../scss/style.scss'
-import html2canvas from 'html2canvas';
+import html2canvas from 'html2canvas'
 
 export default function EditorFrase({ mostrarFrase }) {
 
@@ -106,13 +106,13 @@ export default function EditorFrase({ mostrarFrase }) {
 
   const descargaDivComoImagen = (e) => {
     e.preventDefault(); // Para prevenir el comportamiento predeterminado del enlace
-  
+
     const divElement = document.querySelector('#quote-image');
-  
-    html2canvas(divElement, {scale: 5,}).then(canvas => {
+
+    html2canvas(divElement, { scale: 5, }).then(canvas => {
       // Convierte el canvas a imagen
       const imgData = canvas.toDataURL('image/jpg');
-  
+
       // Crea un elemento <a> para descargar la imagen
       const link = document.createElement('a');
       link.href = imgData;
@@ -123,16 +123,16 @@ export default function EditorFrase({ mostrarFrase }) {
 
   return (
     <section className='container vw-100 py-5 px-5'>
-      <div className='row d-flex justify-content-center p-3'>
+      <div className='row d-flex justify-content-center p-3 flex-column flex-md-row'>
         {/* formulario de edición */}
-        <div className='col-4 bg-light p-3 rounded-2'>
+        <div className='col-12 col-md-4 bg-light p-3 rounded-2'>
           <form>
             <h3 className='display-8 fw-bold text-body-emphasis'>Editá tu frase</h3>
             <fieldset>
               <div className='input-group my-5'>
                 <label className='input-group-text' for='formatoDeImagen'>Formato de imagen</label>
                 <select className='form-select' id='formatoDeImagen' onChange={formatoImagen}>
-                <option disabled selected>Formatos...</option>
+                  <option disabled selected>Formatos...</option>
                   <option value='IGFC' >Post de Instagram (cuadrado)</option>
                   <option value='IGFV'>Post de Instagram (vertical)</option>
                   <option value='IGS'>Story de Instagram</option>
@@ -224,7 +224,7 @@ export default function EditorFrase({ mostrarFrase }) {
           </form>
         </div>
         {/* mesa de edicion */}
-        <div className='col-8 p-3 rounded-2 d-flex justify-content-center'>
+        <div className='col-12 col-md-8 p-3 rounded-2 d-flex justify-content-center'>
           <figure id='quote-image'
             style={{
               width: `${medidasFormato.width}px`,
@@ -236,7 +236,7 @@ export default function EditorFrase({ mostrarFrase }) {
             }}>
             <div className='overflow-y-hidden'>
               <p style={{
-                fontSize: `${tamanioLetra *2}em`,
+                fontSize: `${tamanioLetra * 2}em`,
                 textAlign: `${justificacionFrase}`,
                 fontFamily: `${tipografia}`,
                 fontWeight: estilosTipograficos === 'bold' ? 'bold' : 'normal',
@@ -256,7 +256,6 @@ export default function EditorFrase({ mostrarFrase }) {
           </figure>
         </div>
       </div>
-
     </section>
   )
 }

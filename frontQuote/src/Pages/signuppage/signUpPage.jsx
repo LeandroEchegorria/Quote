@@ -5,11 +5,11 @@ import FooterHome from '../../Components/FooterHome'
 
 function SignUpPage() {
   return (
-    <>
+    <main className='bg-background'>
       <NavBar />
       <Signup />
       <FooterHome />
-    </>
+    </main>
   )
 }
 

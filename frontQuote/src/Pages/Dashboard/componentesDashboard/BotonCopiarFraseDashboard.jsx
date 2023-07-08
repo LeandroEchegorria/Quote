@@ -1,6 +1,6 @@
-import React from 'react';
-import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
-import Swal from 'sweetalert2';
+import React from 'react'
+import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded'
+import Swal from 'sweetalert2'
 
 //paso como parametros las copias del autor y la frase (usando useRef en el Quote) para poder utilizarlo en la función de 'copiarFrase' en el portapapeles. En esta función, guardo la info, le doy formato en otra variable y agrego los popUps
 export default function BotonCopiarFraseDashboard({ quoteRef, authorRef }) {

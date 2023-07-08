@@ -1,9 +1,9 @@
-import { React, useRef, useState } from 'react';
-import FormatQuoteRoundedIcon from '@mui/icons-material/FormatQuoteRounded';
-import BotonAgregarFav from './BotonAgregarFav';
-import BotonEditarFrase from './BotonEditarFrase';
-import BotonCopiarFraseDashboard from './BotonCopiarFraseDashboard';
-import EditorFrase from '../componentesDashboard/EditorFrase';
+import { React, useRef, useState } from 'react'
+import FormatQuoteRoundedIcon from '@mui/icons-material/FormatQuoteRounded'
+import BotonAgregarFav from './BotonAgregarFav'
+import BotonEditarFrase from './BotonEditarFrase'
+import BotonCopiarFraseDashboard from './BotonCopiarFraseDashboard'
+import EditorFrase from '../componentesDashboard/EditorFrase'
 
 // le paso al componente un objeto que contiene los valores finales de las funciones frasePropia y fraseApi
 export default function Quote({ frasePropia, fraseApi }) {

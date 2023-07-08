@@ -1,5 +1,5 @@
-import React from 'react';
-import EditRoundedIcon from '@mui/icons-material/EditRounded';
+import React from 'react'
+import EditRoundedIcon from '@mui/icons-material/EditRounded'
 
 export default function BotonEditarFrase({mostrarEditorDeFrase}) {
   const editarFrase = () => {

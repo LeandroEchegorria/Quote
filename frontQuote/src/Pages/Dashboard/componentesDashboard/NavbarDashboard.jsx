@@ -6,32 +6,26 @@ import Historial from '../pagesDashboard/Historial'
 
 export default function NavbarDashboard() {
   return (
-    <header className='py-3 bg-background fixed-top shadow'>
-      <div className='container'>
-        <div className='d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start'>
-          <a href='/' className='d-flex align-items-center mb-lg-0 link-body-emphasis text-decoration-none'>
-            <img src={logoQuotify} alt='Quotify Logo' height='25px'/>
-          </a>
-
-          <ul className='nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0'>
-            <li><Link to='/home-user/dashboard' element={<Dashboard/>} className='nav-link link-body-emphasis ms-9'>Dashboard</Link></li>
-            <li><Link to='/home-user/historial' element={<Historial/>} className='nav-link link-body-emphasis'>Historial</Link></li>
-          </ul>
-
-          <div className='dropdown-center text-end'>
-            <a href='#' className='d-block link-body-emphasis text-decoration-none dropdown-toggle' data-bs-toggle='dropdown' aria-expanded='false'>
-              <img src='https://github.com/mdo.png' alt='mdo' width='40' height='40' className='rounded-3 border-primary-2' />
-            </a>
-            <ul className='dropdown-menu w-25 rounded-3 bg-primary text-small p-3 text-center'>
-              <li><p className='text-white m-0'><strong>Bonnie Bonassi</strong></p></li>
-              <li><p className='text-white'>@Quotyfier</p></li>
-              <li><hr className='dropdown-divider bg-white' /></li>
-              <li><a className='nav-link link-hover-white text-white my-3' href='#'>Editar perfil</a></li>
-              <li><button type='button' class='btn btn-special-btn px-auto py-2'>Cerrar Sesión</button></li>
-            </ul>
-          </div>
+<header className='py-3 bg-background fixed-top shadow'>
+  <nav className='navbar navbar-expand-lg py-0'>
+    <div className='container-fluid px-5'>
+      <a href='/' className='navbar-brand'>
+        <img src={logoQuotify} alt='Quotify Logo' height='25px' />
+      </a>
+      <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
+        <span className='navbar-toggler-icon'></span>
+      </button>
+      <div className='collapse navbar-collapse justify-content-end' id='navbarNav'>
+        <ul className='navbar-nav sm-pt-7'>
+          <li className='nav-item text-center'><Link to='/home-user/dashboard' element={<Dashboard />} className='nav-link active'>Dashboard</Link></li>
+          <li className='nav-item text-center'><Link to='/home-user/historial' element={<Historial />} className='nav-link'>Historial</Link></li>
+        
+        <li className='nav-item text-center'><button type='button' className='btn btn-primary-btn my-1 my-lg-0 px-3 py-2 flex justify-center mx-3 btn-sm fw-bold'>Cerrar Sesión</button></li>
+          </ul>    
         </div>
       </div>
-    </header>
+  </nav>
+</header>
+
   )
 }

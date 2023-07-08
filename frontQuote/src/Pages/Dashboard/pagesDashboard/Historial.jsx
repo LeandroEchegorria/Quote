@@ -3,7 +3,7 @@ import BotonSacarFav from '../componentesDashboard/botonSacarFav';
 import BotonCopiarFraseFavorita from '../componentesDashboard/BotonCopiarFraseFavorita';
 
 export default function Historial() {
-// Obtener el historial almacenado en localStorage
+  // Obtener el historial almacenado en localStorage
   const historial = JSON.parse(localStorage.getItem('historial')) || [];
 
   return (
@@ -18,7 +18,7 @@ export default function Historial() {
                 </h6>
                 <div>
                   <BotonSacarFav text={frase?.text} author={frase?.author} />
-                  <BotonCopiarFraseFavorita text={frase?.text} author={frase?.author}/>
+                  <BotonCopiarFraseFavorita text={frase?.text} author={frase?.author} />
                 </div>
               </div>
               <div className='card-body'>

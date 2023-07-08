@@ -1,5 +1,5 @@
 import React from 'react'
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'
 
 //paso como parametros la función de setear la frase propia, y los valores de los estados de 
 export default function BotonCrearFrasePropia({ setFrasePropia, mostrarFrase, frasePropia }) {

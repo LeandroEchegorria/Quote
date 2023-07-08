@@ -1,6 +1,6 @@
-import React from 'react';
-import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
-import Swal from 'sweetalert2';
+import React from 'react'
+import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded'
+import Swal from 'sweetalert2'
 
 export default function BotonCopiarFraseDashboard({ text, author }) {
   const copiarFrase = () => {

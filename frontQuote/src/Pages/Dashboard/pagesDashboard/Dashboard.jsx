@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Quote from '../componentesDashboard/Quote';
+import React, { useState } from 'react'
+import Quote from '../componentesDashboard/Quote'
 import 'animate.css';
-import BotonCrearFrasePropia from '../componentesDashboard/BotonCrearFrasePropia';
-import BotonGenerarFraseDia from '../componentesDashboard/BotonGenerarFraseDia';
+import BotonCrearFrasePropia from '../componentesDashboard/BotonCrearFrasePropia'
+import BotonGenerarFraseDia from '../componentesDashboard/BotonGenerarFraseDia'
 
 export default function Dashboard() {
   // defino los estados tanto del contenido como del renderizado
@@ -23,7 +23,7 @@ export default function Dashboard() {
   };
 
   return (
-    <section className='min-vh-100 text-center bg-background d-flex flex-column justify-content-center align-items-center py-9'>
+    <section className='min-vh-100 text-center bg-background d-flex flex-column justify-content-center align-items-center py-9 text-black mt-9 px-2 px-lg-0'>
       <h1 className='display-5 fw-bold text-body-emphasis mb-3 animate__animated animate__swing animate__delay-1s'>¡Bienvenido, Quoty!</h1>
       <div className='col-lg-6 mx-auto'>
         <p className='lead'>Presioná el botón y comenzá tu trayecto hacia la motivación con nuestras frases, elegí tus favoritas, personalizalas y compartilas con amigos en tus redes sociales.</p>

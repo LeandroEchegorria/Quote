@@ -1,42 +1,41 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 import logoQuotify from '../assets/quotify-logo.svg'
-
-import Historial from '../Pages/Dashboard/pagesDashboard/Historial'
-
-
-
 
 const NavBar = () => {
   return (
-      <header className='py-3 bg-background fixed-top shadow'>
-        <div className='container'>
-          <div className='d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start'>
-            <a href='/' className='d-flex align-items-center mb-lg-0 link-body-emphasis text-decoration-none'>
-              <img src={logoQuotify} alt='Quotify Logo' height='25px'/>
-            </a>
-
-            <ul className='nav col-12 flex col-lg-auto me-lg-auto mb-2 mb-md-0'>
-              <li><a href='#ComoFunciona' className='nav-link link-body-emphasis ms-9'>Cómo Funciona</a></li>
-              <li><a href='/#Testimonios'  className='nav-link link-body-emphasis'>Testimonios</a></li>
-              <li><a href='/#Contacto'  className='nav-link link-body-emphasis'>Contactanos</a></li>
-              <li><a href='/#Contacto'  className='nav-link link-body-emphasis'>Team</a></li>
+    <header className='py-3 bg-background fixed-top shadow'>
+      <nav className='navbar navbar-expand-lg py-0'>
+        <div className='container-fluid px-5'>
+          <a className='navbar-brand' href='/#HeroPrincipal'>
+            <img src={logoQuotify} alt='Quotify Logo' height='25px' />
+          </a>
+          <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
+            <span className='navbar-toggler-icon'></span>
+          </button>
+          <div className='collapse navbar-collapse justify-content-end' id='navbarNav'>
+            <ul className='navbar-nav sm-pt-7'>
+              <li className='nav-item text-center'>
+                <a className='nav-link active' aria-current='page' href='/#ComoFunciona'>Cómo Funciona</a>
+              </li>
+              <li className='nav-item text-center'>
+                <a className='nav-link' href='/#Testimonios'>Testimonios</a>
+              </li>
+              <li className='nav-item text-center'>
+                <a className='nav-link' href='/#Contacto'>Contactanos</a>
+              </li>
+              <li className='nav-item text-center sm-pb-5'>
+                <a className='nav-link' href='/#Contacto'>Team</a>
+              </li>
+              <li className='nav-item text-center'><Link to='/login'>
+                <button type='button' className='btn btn-secondary-btn my-1 my-lg-0 px-3 py-2 flex justify-center mx-3 btn-sm fw-bold'>Iniciar Sesión</button>
+              </Link></li>
+              <li className='nav-item text-center'><Link to='/register'><button type='button' className='btn btn-primary-btn my-1 my-lg-0 px-3 py-2 flex justify-center mx-3 btn-sm fw-bold'>Registrarse</button>
+              </Link></li>
             </ul>
-
-            <Link to='/login'>
-              <button type='button' className='btn btn-secondary-btn btn-sm px-3 py-2 flex justify-end mx-2'>
-                <strong>Iniciar Sesión</strong>
-              </button>
-            </Link>
-            <Link to='/register'><button type='button' className='btn btn-primary btn-sm px-4 py-2 flex justify-end'><strong>Registrarse</strong></button>
-            </Link>
-            
-
           </div>
         </div>
-      </header>
-
-
-    
+      </nav>
+    </header>
   )
 }
 

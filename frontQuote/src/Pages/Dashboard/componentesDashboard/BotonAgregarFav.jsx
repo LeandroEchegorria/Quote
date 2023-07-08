@@ -1,6 +1,6 @@
-import { React } from 'react';
-import Swal from 'sweetalert2';
-import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
+import { React } from 'react'
+import Swal from 'sweetalert2'
+import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded'
 
 export default function BotonAgregarFav({ quoteRef, authorRef }) {
 
