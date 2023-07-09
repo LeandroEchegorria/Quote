@@ -5,6 +5,11 @@ import Dashboard from '../pagesDashboard/Dashboard'
 import Historial from '../pagesDashboard/Historial'
 
 export default function NavbarDashboard() {
+
+function logout() {
+  window.location.href = "/";
+}
+
   return (
 <header className='py-3 bg-background fixed-top shadow'>
   <nav className='navbar navbar-expand-lg py-0'>
@@ -20,7 +25,7 @@ export default function NavbarDashboard() {
           <li className='nav-item text-center'><Link to='/home-user/dashboard' element={<Dashboard />} className='nav-link active'>Dashboard</Link></li>
           <li className='nav-item text-center'><Link to='/home-user/historial' element={<Historial />} className='nav-link'>Historial</Link></li>
         
-        <li className='nav-item text-center'><button type='button' className='btn btn-primary-btn my-1 my-lg-0 px-3 py-2 flex justify-center mx-3 btn-sm fw-bold'>Cerrar Sesión</button></li>
+        <li className='nav-item text-center'><button type='button' className='btn btn-primary-btn my-1 my-lg-0 px-3 py-2 flex justify-center mx-3 btn-sm fw-bold' onClick={logout}>Cerrar Sesión</button></li>
           </ul>    
         </div>
       </div>
